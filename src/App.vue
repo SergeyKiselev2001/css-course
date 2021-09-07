@@ -56,7 +56,7 @@ export default {
 
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
 *{
@@ -103,12 +103,38 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  background: linear-gradient(45deg, #EECFBA, #C5DDE8);
 }
 
 .card-img{
   height: 300px;
-  width: auto;
+  width: 300px;
+  border: 3px solid white;
+  padding: 10px;
+  object-fit: cover;
   border-radius: 50%;
+  margin-top: 15px;
+  box-shadow: 0 0 10px 5px rgba(95, 95, 95, 0.37);
+  
+}
+
+.card-heading {
+  font-size: 32px;
+  margin: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  padding: 5px 15px;
+  background-color: rgb(255, 255, 255);
+
+  transform: perspective(1000px) skewX(-20deg) rotateY(40deg) translate(20px, 0px);
+}
+
+.card-paragraph {
+  font-size: 16px;
+  padding: 0px 10px;
 }
 
 </style>
