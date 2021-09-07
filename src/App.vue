@@ -1,26 +1,114 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <div class="card-wrapper">
+      <div class="card">
+        <img src="../public/imgs/john-doe.jpg" class="card-img">
+        <h1 class="card-heading">John Doe</h1>
+        <p class="card-paragraph"><i class="fas fas-rignt">"</i>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit non dicta  minima inventore sit magni dolorum dolor mollitia nesciunt harum veniam ad voluptatem, molestias voluptate hic quas corporis esse? Eaque!
+        <i class="fas fas-left">"</i>
+        </p>
+        <ul class="card-icons">
+          <li>
+            <a href="#" class="card-icon-link">
+              <img src="../public/imgs/vk.png" class="icon">
+              <i class="card-icon fab fa-facebook-icon">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="card-icon-link">
+              <img src="../public/imgs/fb.png" class="icon">
+              <i class="card-icon fab fa-facebook-icon">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="card-icon-link">
+              <img src="../public/imgs/instagram.png" class="icon">
+              <i class="card-icon fab fa-facebook-icon">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="card-icon-link">
+              <img src="../public/imgs/twitter.png" class="icon">
+              <i class="card-icon fab fa-facebook-icon">
+              </i>
+            </a>
+          </li>
+        </ul>
+        <button class="card-btn">View Profile</button>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+
+*{
+  margin: 0px;
+  padding: 0px;
 }
+
+.container {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../public/imgs/bg.jpg') no-repeat center;
+}
+
+.icon{
+  height: 30px;
+  width: auto;
+  border-radius: 50%;
+}
+.card-wrapper {
+  box-sizing: border-box;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  height: fit-content;
+  width: 450px;
+  /* border: 1px solid white; */
+  transition: .2s;
+  border-radius: 10px;
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../public/imgs/bg.jpg') no-repeat center;
+}
+
+.card-wrapper:hover{
+  box-shadow: 0 0 30px #fff;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-img{
+  height: 300px;
+  width: auto;
+  border-radius: 50%;
+}
+
 </style>
