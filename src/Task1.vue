@@ -1,5 +1,5 @@
 <template>
-      <div class="container">
+    <div class="container">
     <div class="card-wrapper">
       <div class="card-wrapper-2">
 
@@ -112,6 +112,18 @@ export default {
   border-radius: 10px;
   background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../public/imgs/bg.jpg') no-repeat center;
 }
+
+@media (max-height: 950px) {
+  .card-wrapper{
+    transform: translate(-50%, -60%);
+  }
+}
+
+/* @media (max-height: 950px) {
+  .card-wrapper{
+    transform: translate(-50%, -55%);
+  }
+} */
 
 .card-wrapper:hover{
   box-shadow: 0 0 30px #fff;
