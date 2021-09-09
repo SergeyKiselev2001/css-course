@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+      <div class="container">
     <div class="card-wrapper">
       <div class="card-wrapper-2">
 
@@ -47,24 +47,23 @@
 
     </div>
   </div>
-
-  <task-1></task-1>
 </template>
 
 <script>
 
-import Task1 from './Task1.vue';
-
-
 export default {
-  name: 'App',
-  components: {
-    Task1
-  }
+    name: 'Task1.vue',
+    components: {
+
+    },
+
 };
+
+
 </script>
 
-<style>
+<style >
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
 
@@ -83,7 +82,7 @@ export default {
     height: 100vh;
     width: 100vw;
     
-    /* background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../../public/imgs/bg.jpg') no-repeat center; */
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../public/imgs/bg.jpg') no-repeat center; 
 }
 
 .icon{
@@ -200,6 +199,7 @@ export default {
 
   transform: scale(1.05);
 }
+
 
 
 </style>
