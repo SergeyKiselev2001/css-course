@@ -62,7 +62,7 @@ export default {
 
 </script>
 
-<style >
+<style>
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
@@ -119,11 +119,6 @@ export default {
   }
 }
 
-/* @media (max-height: 950px) {
-  .card-wrapper{
-    transform: translate(-50%, -55%);
-  }
-} */
 
 .card-wrapper:hover{
   box-shadow: 0 0 30px #fff;
