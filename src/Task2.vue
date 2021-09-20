@@ -403,6 +403,52 @@ export default {
 }
 
 
+@media(max-width:850px){
+    .form-container{
+        width: 500px;
+        height: 400px;
+    }
+    .form-input{
+        width: 200px;
+        
+    }
+    .form-container__sign-up-form{
+        padding: 120px 20px;
+    }
+
+    .form-container__header{
+        padding: 40px;
+    }
+    .under-anim {
+        position: absolute;
+        top: 260px;
+    }
+}
+
+@media(max-width:520px){
+    .form-container{
+        width: 300px;
+        height: 400px;
+    }
+
+    .form-container__sign-up-form{
+      width: 300px;
+    }
+
+    .form-container__header {
+        display: none;
+    }
+
+    .form-container__sign-up-form {
+        padding: 30px;
+    }
+
+    .x-btn {
+        transform: translate(5px, 20px);
+    }
+
+}
+
 
 
 
